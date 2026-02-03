@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+            <td>
+                <input type="text" id="name" name="name" placeholder="Enter name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input type="text" id="email" name="email" placeholder="Enter email">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="validateForm()">Submit</button>
+                <button onclick="clearForm()">Clear</button>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td>
+                <p><span id="message"></span></p>
+            </td>
+        </tr>
+    </table>
+
+    <p>Name :<span id="nametxt"></span></p>
+    <p>Email :<span id="emailtxt"></span></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
