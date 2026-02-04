@@ -1,5 +1,5 @@
 const element = document.getElementById("element");
-const item = document.getElementById("item");
+const elementsdisplay = document.getElementById("elements");
 let arr = [];
 let temp = 0;
 
@@ -14,5 +14,16 @@ function insertItem() {
 }
 
 function displayItems() {
-    elements.innerHTML = arr(temp);
+    
+    elementsdisplay.innerHTML = "";
+
+    for(let i = 0; i < arr.length; i++) {
+        elementsdisplay.innerHTML += arr[i] + " ";
+    }
+}
+
+function clearItems() {
+    arr = [];
+    temp = 0;
+    elementsdisplay.innerHTML = "";
 }
